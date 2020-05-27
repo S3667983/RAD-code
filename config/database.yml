@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: 172.18.0.1 #<%= ENV["DATABASE_HOST"] %>
+  username: <%= ENV["DATABASE_USERNAME"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  port: <%= ENV["DATABASE_PORT"] %>
+  pool: 5
+
+development:
+  <<: *default
+  database: db/myapp_development
+
+
+test:
+  <<: *default
+  database: db/myapp_test
