@@ -1,0 +1,18 @@
+<% provide(:title, 'Login up') %>
+<h1>Login  </h1>
+
+<div class = "row">
+ <div class = "col-md-6 col-md-offset-3">
+  <%= form_for(@user, url: loginup_path) do |f| %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email, class: 'form-control' %>
+
+    <%= f.label :password %>
+    <%= f.text_field :password, class: 'form-control' %>
+
+    <%= f.submit "Login up", class: "btn btn-primary" %>
+   <% end %>
+ </div>
+ <a href ="">register </a>
+</div>
