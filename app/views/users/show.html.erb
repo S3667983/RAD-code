@@ -9,5 +9,14 @@
 </h1>
 </section>
 </aside>
+<div class="col-md-8">
+<% if @user.microposts.any? %>
+<h3>microposts (<%= @user.microposts.count %>) </h3>
+<ol class="microposts">
+
+</ol>
+<%= will_paginate @microposts %>
+<% end %>
+</div>
 </div>
 <%= link_to "Recent Post", '#', class: "btn btn-lg btn-primary" %>
