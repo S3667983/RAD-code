@@ -9,7 +9,7 @@ then go to login
 put detial
 then you will be in main
 
-
+http://localhost:3000/signup
 
 https://dashboard.heroku.com/apps/aqueous-eyrie-78857
 https://aqueous-eyrie-78857.herokuapp.com/
