@@ -1,27 +1,16 @@
 
 <% provide(:title, 'sign up') %>
-<h1>Sign up </h1>
+<h1>Clock+</h1>
+<h2>Clock+ built by Andrew Harris - email: s3667983@student.rmit.edu.au - attempt grade level: pass - tutor group: Thursday 5:30pm Group</h2>
 
-<div class = "row">
- <div class = "col-md-6 col-md-offset-3">
+
+<div class = "row"> 
+<div class = "col-md-6 col-md-offset-3">
+
   <%= form_for(@user, url: signup_path) do |f| %>
 
-    <%= f.label :email %>
-    <%= f.text_field :email, class: 'form-control' %>
-
-    <%= f.label :password %>
-    <%= f.text_field :password, class: 'form-control' %>
-
-    <%= f.label :password_confirmation, "Confirmation" %>
-    <%= f.text_field :password_confirmation, class: 'form-control' %>
-
-    <%= f.label :mobile %>
-    <%= f.text_field :mobile, class: 'form-control' %>
-
-    <%= f.submit "Sign up", class: "btn btn-primary" %>
    <% end %>
  </div>
- <p><%= link_to "already a user?", login_path %></p>
 </div>
 
 
