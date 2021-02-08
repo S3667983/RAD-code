@@ -13,7 +13,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails', '~> 4.4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'carrierwave', '~> 0.11.2'
+gem 'carrierwave', '~> 1.3.2'
 gem 'bcrypt', '~> 3.1.7'
 gem "mini_magick"
 gem "font-awesome-rails"
